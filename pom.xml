@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.1.8</version>
+    <version>3.2.2</version>
   </parent>
 
   <groupId>com.mycompany.app</groupId>
@@ -15,6 +15,10 @@
   <name>SpringBoot3Microservices</name>
   <!--mark this project only as container of projects -->
   <packaging>pom</packaging>
+
+  <modules>
+    <module>microservice-gateway</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +40,7 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>3.1.8</version>
+          <version>3.2.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
